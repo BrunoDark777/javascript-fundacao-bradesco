@@ -10,7 +10,7 @@ let js_n3
 // Entrada de Dados:
 
 js_n1 = parseInt(window.prompt('Informe o valor do primeiro número: ', '00'))
-js_n2 = parseInt(window.prompt('Informw o valor do segundo número: ', '00'))
+js_n2 = parseInt(window.prompt('Informe o valor do segundo número: ', '00'))
 
 // Saida de Dados sem classificação:
 
