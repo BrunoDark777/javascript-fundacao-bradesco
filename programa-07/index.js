@@ -34,13 +34,47 @@ js_sl = js_sb - js_tdes
 
 document.write('<p><b>DEMOSTRATIVO PARA CALCULO DE SALARIO LIQUIDO</b></p>')
 
-document.write('<p>Quantidade de horas trabalhadas (135 a 180)</p><b> ' + js_qht + '</b>')
+document.write('<p>Quantidade de horas trabalhadas (135 a 180) =></p><b> ' + js_qht + '</b>')
 if(js_qht > 180){
-    document.write('<b>Valor Maximo excedido!</b>')
+    document.write('...<b>Valor Maximo excedido!</b>')
 }
 if(js_qht < 135){
-    document.write('<b>Valor Minimo invalido!</b>')
+    document.write('...<b>Valor Minimo invalido!</b>')
 }
+document.write('<p>Valor por hora trabalhada (25 a 50) =></p><b> ' + js_vht + '</b>')
+if(js_vht > 50){
+    document.write('...<b>Valor Maximo excedido!</b>')
+}
+if(js_vht < 25){
+    document.write('...<b>Valor Minimo invalido!</b>')
+}
+document.write('<p>Persentual de desconto INSS (5 a 15) =></p><b> ' + js_inss + '</b>')
+if(js_inss > 15){
+    document.write('...<b>Valor Maximo excedido!</b>')
+}
+if(js_inss < 5){
+    document.write('...<b>Valor Minimo invalido!</b>')
+}
+document.write('<p>==================================================================</p>')
+document.write('<p><b>Salário BRUTO =</b></p> ' + js_sb)
+document.write('<p>Desconto do INSS =</p> ' + js_inss)
+document.write('<p><b>Salário LíQUIDO =</b></p> ' + js_sl + '<br>')
 
+// Saída de Dados com Aninhamento de if:
 
-
+if(js_sl > 10500){
+    document.write('<br><b>Salário Elevado</b> maior que 10.500')
+}
+else{
+    if(js_sl > 6000){
+        document.write('<br><b>Salário Satisfatório</b> maior que 6000')
+    }
+else{
+    if(js_sl > 3000){
+        document.write('<br><b>Salário Moderado</b> maior que 3000')
+    }
+ else{
+    document.write('<br><b>Salário Insatisfatório</b> menor ou igual a 3000')
+} 
+   }
+}
