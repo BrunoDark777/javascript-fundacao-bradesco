@@ -3,7 +3,7 @@ Para desenvolver o calculo é necessario as seguintes informações:
     - Quantidade de horas trabalhadas por mês (js_qht)
     - Valor de hora de trabalho (js_vht)
     - Persentual de desconto do INSS (js_inss) 
-- Inoforme a classificação salarial
+- Informe a classificação salarial
 - Objeto / Metodo utilizado:
 - Entrada : window.prompt
 - Saida : window.write */
